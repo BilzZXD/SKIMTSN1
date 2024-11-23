@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Pembelajaran Kebudayaan Islam</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+</head>
+<body class="bg-gradient-to-b from-green-800 via-emerald-600 to-green-900 text-white font-sans">
+
+	<header class="relative bg-cover bg-center h-screen" style="background-image: url('https://files.catbox.moe/dc7t8o.jpg');">
+			<!-- Overlay -->
+			<div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+			<!-- Content -->
+			<div class="relative h-full flex flex-col md:flex-row items-center justify-center px-6">
+					<!-- Left Section (Title) -->
+					<div class="w-full md:w-1/2 text-left z-10 px-4">
+							<h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 tracking-wide drop-shadow-2xl uppercase text-white">
+									📜 Sejarah Kebudayaan Islam
+							</h1>
+							<p class="text-lg sm:text-xl md:text-2xl max-w-3xl mb-8 font-medium leading-relaxed drop-shadow-lg text-white">
+									Pelajari sejarah, tradisi, seni, dan nilai-nilai Islam untuk memperkaya wawasan budaya dan spiritual Anda. Ikuti perjalanan ini untuk memahami lebih dalam tentang warisan yang kaya ini.
+							</p>
+							<div class="space-y-4 sm:space-x-4 sm:flex sm:flex-row sm:space-y-0 w-full">
+									<!-- Button "Mulai Belajar" -->
+									<a href="#about" class="w-full sm:w-auto bg-green-700 text-white px-6 py-3 sm:px-10 sm:py-4 rounded-full text-lg font-semibold shadow-xl transform hover:scale-105 hover:bg-green-800 transition duration-300 ease-in-out text-center mb-4 sm:mb-0">
+											<i class="fa-solid fa-book-open mr-2"></i> Mulai Belajar
+									</a>
+									<!-- Button "Lihat Tugas" -->
+									<!-- Button "Lihat Tugas" -->
+									<a href="#tugas" class="w-full sm:w-auto bg-white text-green-800 px-6 py-3 sm:px-10 sm:py-4 rounded-full text-lg font-semibold shadow-xl transform hover:scale-105 hover:bg-gray-200 transition duration-300 ease-in-out text-center block">
+											<i class="fa-solid fa-tasks mr-2"></i> Lihat Tugas
+									</a>
+							</div>
+					</div>
+
+					<!-- Right Section (Bismillah Box) -->
+					<div class="w-full md:w-1/2 bg-opacity-70 bg-white rounded-lg p-6 mt-6 md:mt-0 z-10">
+							<div class="text-center text-xl font-semibold text-green-800 mb-4">
+									<i class="fa-solid fa-mosque mb-4"></i>
+									<span class="block text-3xl sm:text-4xl font-extrabold">بِسْمِ ٱللَّهِ</span>
+									<p class="italic text-lg sm:text-xl mt-4">"Dengan nama Allah, Yang Maha Pengasih, Maha Penyayang"</p>
+							</div>
+							<p class="text-sm sm:text-base text-gray-700">
+									Kalimat pembukaan yang digunakan oleh umat Muslim dalam berbagai aktivitas sebagai pengingat untuk memulai segala sesuatu dengan niat baik dan dengan mengingat Allah.
+							</p>
+					</div>
+			</div>
+
+			<!-- Additional Boxes Section -->
+			<div class="absolute bottom-16 w-full flex justify-center md:justify-end mt-6 px-6 hidden lg:flex"> <!-- Sembunyikan di bawah lg (1200px) -->
+					<!-- Combined Boxes -->
+					<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:ml-[36px]">
+							<!-- Box 1 (Rounded) -->
+							<div class="bg-white bg-opacity-50 flex items-center justify-center w-16 sm:w-20 h-16 sm:h-20 relative shadow-lg">
+									<p class="text-green-800 text-xs sm:text-sm font-bold text-center">Subuh</p>
+							</div>
+							<!-- Box 2 -->
+							<div class="bg-white bg-opacity-50 flex items-center justify-center w-16 sm:w-20 h-16 sm:h-20 relative shadow-lg">
+									<p class="text-green-800 text-xs sm:text-sm font-bold text-center">Dzuhur</p>
+							</div>
+							<!-- Box 3 -->
+							<div class="bg-white bg-opacity-50 flex items-center justify-center w-16 sm:w-20 h-16 sm:h-20 relative shadow-lg">
+									<p class="text-green-800 text-xs sm:text-sm font-bold text-center">Ashar</p>
+							</div>
+							<!-- Box 4 -->
+							<div class="bg-white bg-opacity-50 flex items-center justify-center w-16 sm:w-20 h-16 sm:h-20 relative shadow-lg">
+									<p class="text-green-800 text-xs sm:text-sm font-bold text-center">Magrib</p>
+							</div>
+							<!-- Box 5 (Green Box, Rounded) -->
+							<div class="bg-green-700 text-white flex items-center justify-center w-16 sm:w-20 h-16 sm:h-20 rounded-r-lg relative shadow-lg">
+									<p class="text-xs sm:text-sm font-bold text-center">Isya</p>
+							</div>
+					</div>
+			</div>
+	</header>
+
+	<!-- About Section -->
+	<section id="about" class="py-16 bg-white text-green-900">
+			<div class="max-w-4xl mx-auto text-center">
+					<h2 class="text-3xl font-bold mb-4">
+							<i class="fa-solid fa-info-circle text-green-600 mr-2"></i> Tentang Kebudayaan Islam
+					</h2>
+					<p class="text-lg sm:text-xl lg:text-2xl">
+							Pembelajaran ini dirancang untuk memperdalam pemahaman tentang sejarah, seni, tradisi, dan nilai-nilai Islam. Edukasi ini sangat penting untuk memperkaya wawasan budaya dan spiritual.
+					</p>
+			</div>
+	</section>
+
+	<!-- Perjalanan Islam Section -->
+	<section id="perjalanan-islam" class="bg-gray-50 py-16">
+			<div class="max-w-7xl mx-auto px-6 lg:px-8">
+					<h2 class="text-4xl font-bold text-gray-800 text-center mb-12">
+							Perjalanan Islam
+					</h2>
+					<div class="relative">
+							<!-- Garis Tengah pada ukuran layar lebih besar dari 1000px -->
+							<div class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-green-600 h-full hidden lg:block"></div>
+
+							<!-- Item 1 -->
+							<div class="flex flex-col sm:flex-row items-center justify-start mb-8">
+									<div class="bg-white shadow-md rounded-lg p-6 max-w-lg w-full card-content">
+											<div class="card-number">1</div>
+											<h3 class="text-2xl font-semibold text-gray-800 mb-2">Wahyu Pertama</h3>
+											<p class="text-gray-600">
+													Peristiwa di Gua Hira saat Nabi Muhammad SAW menerima wahyu pertama dari Malaikat Jibril yang menjadi awal kerasulan beliau.
+											</p>
+									</div>
+							</div>
+
+							<!-- Item 2 -->
+							<div class="flex flex-col sm:flex-row items-center justify-end mb-8">
+									<div class="bg-white shadow-md rounded-lg p-6 max-w-lg w-full text-right card-content">
+											<div class="card-number">2</div>
+											<h3 class="text-2xl font-semibold text-gray-800 mb-2">Hijrah ke Madinah</h3>
+											<p class="text-gray-600">
+													Nabi Muhammad SAW dan para sahabat hijrah ke Madinah pada tahun 622 M, menandai awal kalender Hijriyah.
+											</p>
+									</div>
+							</div>
+
+							<!-- Item 3 -->
+							<div class="flex flex-col sm:flex-row items-center justify-start mb-8">
+									<div class="bg-white shadow-md rounded-lg p-6 max-w-lg w-full card-content">
+											<div class="card-number">3</div>
+											<h3 class="text-2xl font-semibold text-gray-800 mb-2">Fathu Makkah</h3>
+											<p class="text-gray-600">
+													Penaklukan kota Mekkah oleh umat Islam yang dipimpin oleh Nabi Muhammad SAW tanpa pertumpahan darah, mengembalikan Ka'bah sebagai tempat ibadah tauhid.
+											</p>
+									</div>
+							</div>
+
+							<!-- Item 4 -->
+							<div class="flex flex-col sm:flex-row items-center justify-end mb-8">
+									<div class="bg-white shadow-md rounded-lg p-6 max-w-lg w-full text-right card-content">
+											<div class="card-number">4</div>
+											<h3 class="text-2xl font-semibold text-gray-800 mb-2">Khulafaur Rasyidin</h3>
+											<p class="text-gray-600">
+													Masa pemerintahan Abu Bakar, Umar, Utsman, dan Ali yang memperluas wilayah Islam dan menegakkan syariat.
+											</p>
+									</div>
+							</div>
+
+							<!-- Item 5 -->
+							<div class="flex flex-col sm:flex-row items-center justify-start">
+									<div class="bg-white shadow-md rounded-lg p-6 max-w-lg w-full card-content">
+											<div class="card-number">5</div>
+											<h3 class="text-2xl font-semibold text-gray-800 mb-2">Islam di Era Modern</h3>
+											<p class="text-gray-600">
+													Perkembangan Islam di berbagai belahan dunia dengan fokus pada pendidikan, teknologi, dan kesejahteraan umat.
+											</p>
+									</div>
+							</div>
+					</div>
+			</div>
+	</section>
+
+	<!-- Tambahkan CSS -->
+	<style>
+			/* Gaya default */
+			.card-number {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 2.5rem; /* Lebar lingkaran angka */
+					height: 2.5rem; /* Tinggi lingkaran angka */
+					background-color: #16a34a; /* Warna hijau */
+					color: white;
+					border-radius: 9999px; /* Membuat lingkaran */
+					font-weight: bold;
+					font-size: 1rem;
+					position: relative;
+					z-index: 10;
+			}
+
+			/* Saat layar kecil (max-width: 702px) */
+			@media (max-width: 702px) {
+					.card-number {
+							position: static;
+							margin-bottom: 1rem; /* Menambahkan jarak bawah angka */
+							order: -1; /* Membuat angka tampil di atas konten kartu */
+					}
+
+					.card-content {
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							text-align: center;
+					}
+			}
+	</style>
+
+	<!-- Tugas Section -->
+	<section id="tugas" class="py-16 bg-gradient-to-r from-green-50 to-green-100 text-green-900">
+			<div class="max-w-7xl mx-auto px-6 lg:px-8">
+					<h2 class="text-4xl font-bold mb-10 text-center text-green-700">
+							<i class="fa-solid fa-tasks text-green-600 mr-2"></i> Tugas untuk Siswa dan Siswi
+					</h2>
+					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+							<!-- Tugas 1 -->
+							<div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+									<h3 class="text-2xl font-bold mb-2 flex items-center text-green-800">
+											<i class="fa-solid fa-book-open mr-2"></i> Tugas 1: Sejarah Islam
+									</h3>
+									<p class="text-gray-600 text-sm mb-4">
+											Jelaskan secara singkat perjalanan hidup Nabi Muhammad SAW dalam 200 kata.
+									</p>
+									<a href="/cek-tugas/tugas-1" 
+										 class="inline-flex items-center bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-500 transition">
+											<i class="fa-solid fa-magnifying-glass mr-2"></i> Cek Tugas
+									</a>
+							</div>
+
+							<!-- Tugas 2 -->
+							<div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+									<h3 class="text-2xl font-bold mb-2 flex items-center text-green-800">
+											<i class="fa-solid fa-mosque mr-2"></i> Tugas 2: Kebudayaan Islam
+									</h3>
+									<p class="text-gray-600 text-sm mb-4">
+											Buatlah ringkasan mengenai seni kaligrafi Islam beserta contohnya.
+									</p>
+									<a href="/cek-tugas/tugas-2" 
+										 class="inline-flex items-center bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-500 transition">
+											<i class="fa-solid fa-magnifying-glass mr-2"></i> Cek Tugas
+									</a>
+							</div>
+
+							<!-- Tugas 3 -->
+							<div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+									<h3 class="text-2xl font-bold mb-2 flex items-center text-green-800">
+											<i class="fa-solid fa-map-marked-alt mr-2"></i> Tugas 3: Geografi Islam
+									</h3>
+									<p class="text-gray-600 text-sm mb-4">
+											Cari tahu negara-negara yang menjadi pusat perkembangan Islam pada masa Dinasti Umayyah.
+									</p>
+									<a href="/cek-tugas/tugas-3" 
+										 class="inline-flex items-center bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-500 transition">
+											<i class="fa-solid fa-magnifying-glass mr-2"></i> Cek Tugas
+									</a>
+							</div>
+
+							<!-- Tugas 4 -->
+							<div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+									<h3 class="text-2xl font-bold mb-2 flex items-center text-green-800">
+											<i class="fa-solid fa-quran mr-2"></i> Tugas 4: Al-Quran
+									</h3>
+									<p class="text-gray-600 text-sm mb-4">
+											Hafalkan surat Al-Fil beserta artinya dan rekam pembacaan Anda.
+									</p>
+									<a href="/cek-tugas/tugas-4" 
+										 class="inline-flex items-center bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-500 transition">
+											<i class="fa-solid fa-magnifying-glass mr-2"></i> Cek Tugas
+									</a>
+							</div>
+
+							<!-- Tugas 5 -->
+							<div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+									<h3 class="text-2xl font-bold mb-2 flex items-center text-green-800">
+											<i class="fa-solid fa-chart-line mr-2"></i> Tugas 5: Ekonomi Islam
+									</h3>
+									<p class="text-gray-600 text-sm mb-4">
+											Jelaskan konsep zakat, infaq, dan sedekah dalam Islam.
+									</p>
+									<a href="/cek-tugas/tugas-5" 
+										 class="inline-flex items-center bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-500 transition">
+											<i class="fa-solid fa-magnifying-glass mr-2"></i> Cek Tugas
+									</a>
+							</div>
+
+							<!-- Tugas 6 -->
+							<div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+									<h3 class="text-2xl font-bold mb-2 flex items-center text-green-800">
+											<i class="fa-solid fa-praying-hands mr-2"></i> Tugas 6: Fiqih
+									</h3>
+									<p class="text-gray-600 text-sm mb-4">
+											Buatlah tabel tata cara pelaksanaan shalat jenazah.
+									</p>
+									<a href="/cek-tugas/tugas-6" 
+										 class="inline-flex items-center bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-500 transition">
+											<i class="fa-solid fa-magnifying-glass mr-2"></i> Cek Tugas
+									</a>
+							</div>
+
+							<!-- Tugas 7 -->
+							<div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+									<h3 class="text-2xl font-bold mb-2 flex items-center text-green-800">
+											<i class="fa-solid fa-calendar-days mr-2"></i> Tugas 7: Sejarah Hijriyah
+									</h3>
+									<p class="text-gray-600 text-sm mb-4">
+											Jelaskan peristiwa penting dalam kalender Hijriyah dan maknanya.
+									</p>
+									<a href="/cek-tugas/tugas-7" 
+										 class="inline-flex items-center bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-500 transition">
+											<i class="fa-solid fa-magnifying-glass mr-2"></i> Cek Tugas
+									</a>
+							</div>
+
+							<!-- Tugas 8 -->
+							<div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+									<h3 class="text-2xl font-bold mb-2 flex items-center text-green-800">
+											<i class="fa-solid fa-users mr-2"></i> Tugas 8: Sosial Islam
+									</h3>
+									<p class="text-gray-600 text-sm mb-4">
+											Tulis esai singkat tentang pentingnya ukhuwah Islamiyah dalam masyarakat modern.
+									</p>
+									<a href="/cek-tugas/tugas-8" 
+										 class="inline-flex items-center bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-500 transition">
+											<i class="fa-solid fa-magnifying-glass mr-2"></i> Cek Tugas
+									</a>
+							</div>
+					</div>
+			</div>
+	</section>
+
+	<!-- Section Tambahan: Video Contoh Tugas -->
+	<section id="contoh-tugas" class="py-16 bg-gradient-to-br from-green-50 to-green-100 text-gray-800">
+			<div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+					<h2 class="text-4xl font-extrabold text-green-700 mb-6">
+							<i class="fa-solid fa-video text-green-500 mr-2"></i> ContohTugas Video
+					</h2>
+					<p class="text-lg text-gray-600 mb-10">
+							Berikut adalah video penjelasan tugas untuk memperdalam pemahaman Anda tentang pelajaran Islam.
+					</p>
+					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+							<!-- Video 1 -->
+							<div class="bg-white rounded-xl shadow-lg p-4">
+									<div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden mb-4">
+											<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+															title="Contoh Tugas 1" 
+															allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+															class="w-full h-full" 
+															allowfullscreen>
+											</iframe>
+									</div>
+									<h3 class="text-lg font-bold text-green-800 mb-2">Tugas 1: Pentingnya Shalat</h3>
+									<p class="text-sm text-gray-600 mb-4">
+											Penjelasan detail tentang tata cara dan keutamaan melaksanakan shalat lima waktu.
+									</p>
+									<!-- Like and View -->
+									<div class="flex justify-between items-center text-sm text-gray-500">
+											<div class="flex items-center">
+													<i class="fa-solid fa-thumbs-up text-green-600 mr-1"></i> 
+													<span>1,234 Likes</span>
+											</div>
+											<div class="flex items-center">
+													<i class="fa-solid fa-eye text-green-600 mr-1"></i> 
+													<span>3,456 Views</span>
+											</div>
+									</div>
+							</div>
+
+							<!-- Video 2 -->
+							<div class="bg-white rounded-xl shadow-lg p-4">
+									<div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden mb-4">
+											<iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ" 
+															title="Contoh Tugas 2" 
+															allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+															class="w-full h-full" 
+															allowfullscreen>
+											</iframe>
+									</div>
+									<h3 class="text-lg font-bold text-green-800 mb-2">Tugas 2: Menghafal Surat Pendek</h3>
+									<p class="text-sm text-gray-600 mb-4">
+											Panduan menghafal surat Al-Fil dengan pelafalan dan tajwid yang benar.
+									</p>
+									<!-- Like and View -->
+									<div class="flex justify-between items-center text-sm text-gray-500">
+											<div class="flex items-center">
+													<i class="fa-solid fa-thumbs-up text-green-600 mr-1"></i> 
+													<span>987 Likes</span>
+											</div>
+											<div class="flex items-center">
+													<i class="fa-solid fa-eye text-green-600 mr-1"></i> 
+													<span>2,789 Views</span>
+											</div>
+									</div>
+							</div>
+
+							<!-- Video 3 -->
+							<div class="bg-white rounded-xl shadow-lg p-4">
+									<div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden mb-4">
+											<iframe src="https://www.youtube.com/embed/TNYQxGhI27Y" 
+															title="Contoh Tugas 3" 
+															allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+															class="w-full h-full" 
+															allowfullscreen>
+											</iframe>
+									</div>
+									<h3 class="text-lg font-bold text-green-800 mb-2">Tugas 3: Sejarah Hijrah</h3>
+									<p class="text-sm text-gray-600 mb-4">
+											Video edukasi tentang makna hijrah dan kisah Nabi Muhammad SAW.
+									</p>
+									<!-- Like and View -->
+									<div class="flex justify-between items-center text-sm text-gray-500">
+											<div class="flex items-center">
+													<i class="fa-solid fa-thumbs-up text-green-600 mr-1"></i> 
+													<span>789 Likes</span>
+											</div>
+											<div class="flex items-center">
+													<i class="fa-solid fa-eye text-green-600 mr-1"></i> 
+													<span>1,345 Views</span>
+											</div>
+									</div>
+							</div>
+					</div>
+			</div>
+	</section>
+
+
+	<!-- Section FAQ -->
+	<section id="faq" class="py-16 bg-white text-gray-800">
+			<div class="max-w-6xl mx-auto px-6 lg:px-8">
+					<h2 class="text-4xl font-extrabold text-center text-green-700 mb-8">
+							<i class="fa-solid fa-question-circle text-green-500 mr-2"></i> FAQ
+					</h2>
+					<p class="text-lg text-gray-600 text-center mb-10">
+							Temukan jawaban atas pertanyaan yang sering diajukan mengenai tugas dan kegiatan kami.
+					</p>
+					<div class="space-y-6">
+							<!-- FAQ 1 -->
+							<div class="border rounded-lg shadow-md p-6">
+									<div class="flex justify-between items-center cursor-pointer">
+											<h3 class="text-lg font-bold text-green-800">
+													<i class="fa-solid fa-circle-question mr-2 text-green-600"></i>
+													Apa itu tugas Sejarah Islam?
+											</h3>
+											<i class="fa-solid fa-chevron-down text-gray-500 toggle-icon"></i>
+									</div>
+									<p class="hidden text-gray-600 mt-4">
+											Tugas Sejarah Islam adalah tugas yang mengajak siswa untuk memahami perjalanan Nabi Muhammad SAW serta peristiwa penting dalam sejarah Islam.
+									</p>
+							</div>
+
+							<!-- FAQ 2 -->
+							<div class="border rounded-lg shadow-md p-6">
+									<div class="flex justify-between items-center cursor-pointer">
+											<h3 class="text-lg font-bold text-green-800">
+													<i class="fa-solid fa-circle-question mr-2 text-green-600"></i>
+													Bagaimana cara mengunggah tugas saya?
+											</h3>
+											<i class="fa-solid fa-chevron-down text-gray-500 toggle-icon"></i>
+									</div>
+									<p class="hidden text-gray-600 mt-4">
+											Untuk mengunggah tugas, klik tombol "Cek Tugas" pada halaman utama dan Anda akan diarahkan ke Google Form yang sesuai.
+									</p>
+							</div>
+
+							<!-- FAQ 3 -->
+							<div class="border rounded-lg shadow-md p-6">
+									<div class="flex justify-between items-center cursor-pointer">
+											<h3 class="text-lg font-bold text-green-800">
+													<i class="fa-solid fa-circle-question mr-2 text-green-600"></i>
+													Apakah semua tugas wajib diselesaikan?
+											</h3>
+											<i class="fa-solid fa-chevron-down text-gray-500 toggle-icon"></i>
+									</div>
+									<p class="hidden text-gray-600 mt-4">
+											Ya, semua tugas wajib diselesaikan tepat waktu agar nilai Anda dapat dinilai sesuai kriteria yang telah ditetapkan.
+									</p>
+							</div>
+
+							<!-- FAQ 4 -->
+							<div class="border rounded-lg shadow-md p-6">
+									<div class="flex justify-between items-center cursor-pointer">
+											<h3 class="text-lg font-bold text-green-800">
+													<i class="fa-solid fa-circle-question mr-2 text-green-600"></i>
+													Bagaimana jika saya mengalami kendala teknis?
+											</h3>
+											<i class="fa-solid fa-chevron-down text-gray-500 toggle-icon"></i>
+									</div>
+									<p class="hidden text-gray-600 mt-4">
+											Jika Anda mengalami kendala teknis, segera hubungi tim kami melalui email atau WhatsApp yang tercantum di halaman utama.
+									</p>
+							</div>
+					</div>
+			</div>
+	</section>
+
+	<!-- Section Pengumpulan Tugas -->
+	<section class="bg-green-50 py-10 px-5">
+		<div class="max-w-4xl mx-auto text-center">
+			<h2 class="text-3xl font-bold text-green-800 mb-4">Pengumpulan Tugas</h2>
+			<p class="text-green-700 mb-6">Serahkan tugas Anda dengan mudah melalui fitur drag-and-drop. Tugas akan diproses dan dikirimkan ke email kami.</p>
+
+			<!-- Drag and Drop Area -->
+			<div 
+				id="dropzone" 
+				class="border-4 border-dashed border-green-600 bg-green-100 rounded-lg p-10 cursor-pointer"
+				ondragover="event.preventDefault()" 
+				ondrop="handleDrop(event)"
+			>
+				<p class="text-green-700 text-lg" id="dropzoneText">Tarik dan letakkan file Anda di sini atau klik untuk mengunggah</p>
+			</div>
+
+			<!-- Uploaded File List -->
+			<ul id="fileList" class="mt-4 text-left text-green-800"></ul>
+
+			<!-- Loading Spinner -->
+			<div id="loading" class="hidden mt-4">
+				<p class="text-green-700">Sedang memproses unggahan...</p>
+				<div class="w-8 h-8 border-4 border-green-600 border-t-transparent rounded-full animate-spin mx-auto"></div>
+			</div>
+
+			<!-- Form Submission -->
+			<form id="submissionForm" class="mt-5">
+				<input 
+					type="text" 
+					id="studentName" 
+					placeholder="Nama Anda" 
+					required 
+					class="block w-full max-w-md mx-auto mb-4 p-3 border border-green-500 rounded-md text-green-800 focus:outline-none focus:ring-2 focus:ring-green-600"
+				>
+				<input 
+					type="email" 
+					id="studentEmail" 
+					placeholder="Email Anda" 
+					required 
+					class="block w-full max-w-md mx-auto mb-4 p-3 border border-green-500 rounded-md text-green-800 focus:outline-none focus:ring-2 focus:ring-green-600"
+				>
+				<button type="submit" class="bg-green-700 hover:bg-green-800 text-white py-2 px-6 rounded-lg">Kirim Tugas</button>
+			</form>
+		</div>
+	</section>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+	<!-- EmailJS Script -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+	<script type="text/javascript">
+			// Initialize EmailJS
+			emailjs.init("RQ6W_zDc3Wbtu4X1m"); // Public Key Anda
+
+			let uploadedFiles = []; // Menyimpan file yang diunggah
+			const maxFileSize = 5 * 1024 * 1024; // Max file size 5MB
+
+			// Handle Drop Event
+			function handleDrop(event) {
+					event.preventDefault();
+					const files = event.dataTransfer.files;
+					for (let file of files) {
+							if (uploadedFiles.length < 5 && file.size <= maxFileSize) {
+									uploadedFiles.push(file);
+									displayFile(file);
+							} else if (file.size > maxFileSize) {
+									Swal.fire({
+											icon: 'error',
+											title: 'File terlalu besar!',
+											text: `File ${file.name} terlalu besar, maksimum 5MB!`,
+											confirmButtonColor: '#e53e3e',
+									});
+							} else {
+									Swal.fire({
+											icon: 'warning',
+											title: 'Maksimal file tercapai!',
+											text: 'Anda hanya dapat mengunggah maksimal 5 file.',
+											confirmButtonColor: '#3182ce',
+									});
+							}
+					}
+			}
+
+		// Display Uploaded File
+		function displayFile(file) {
+				const fileList = document.getElementById("fileList");
+				const fileItem = document.createElement("li");
+				fileItem.classList.add("file-item"); // Tambahkan kelas untuk styling
+
+				fileItem.innerHTML = `
+						File: ${file.name} (${(file.size / 1024).toFixed(2)} KB)
+						<button class="remove-file-btn" onclick="removeFile('${file.name}')">
+								<i class="fas fa-trash-alt"></i> Hapus
+						</button>
+				`;
+				fileList.appendChild(fileItem);
+		}
+
+		// Remove File
+		function removeFile(fileName) {
+				// Filter untuk menghapus hanya file yang dipilih
+				uploadedFiles = uploadedFiles.filter(file => file.name !== fileName);
+
+				// Menampilkan ulang daftar file setelah penghapusan
+				displayUploadedFiles();
+		}
+
+		// Menampilkan ulang daftar file yang sudah diunggah
+		function displayUploadedFiles() {
+				const fileList = document.getElementById("fileList");
+				fileList.innerHTML = ""; // Hapus daftar lama
+				uploadedFiles.forEach(file => displayFile(file)); // Display file yang tersisa
+		}
+
+
+			// Handle Drag Over Event (untuk memastikan file bisa di-drop)
+			document.getElementById("dropzone").addEventListener("dragover", function (e) {
+					e.preventDefault();
+					document.getElementById("dropzone").classList.add("dragover");
+			});
+
+			// Handle Drag Leave Event
+			document.getElementById("dropzone").addEventListener("dragleave", function () {
+					document.getElementById("dropzone").classList.remove("dragover");
+			});
+
+			// Handle Form Submission
+			document.getElementById("submissionForm").addEventListener("submit", function (e) {
+					e.preventDefault();
+
+					const studentName = document.getElementById("studentName").value;
+					const studentEmail = document.getElementById("studentEmail").value;
+
+					if (uploadedFiles.length === 0) {
+							Swal.fire({
+									icon: 'error',
+									title: 'Gagal!',
+									text: 'Harap unggah file sebelum mengirim!',
+									confirmButtonColor: '#e53e3e',
+							});
+							return;
+					}
+
+					// Tampilkan loading spinner
+					document.getElementById("loading").classList.remove("hidden");
+
+				const templateParams = {
+						from_name: studentName,
+						from_email: studentEmail,
+						message: `File yang dikirim: ${uploadedFiles.map(file => file.name).join(", ")}`
+				};
+
+				// Proses setiap file
+				const promises = uploadedFiles.map(file => {
+						const reader = new FileReader();
+						return new Promise((resolve, reject) => {
+								reader.onload = function () {
+										// Kirim data base64 dan nama file
+										templateParams[`file_data_${file.name}`] = reader.result.split(",")[1];  // Hanya bagian base64
+										templateParams[`file_name_${file.name}`] = file.name; // Nama file
+										resolve();
+								};
+								reader.onerror = reject;
+								reader.readAsDataURL(file);  // Baca file sebagai data URL
+						});
+				});
+
+					// Kirim file melalui EmailJS setelah semua file diproses
+					Promise.all(promises)
+							.then(() => {
+									emailjs.send("service_m82b0ae", "template_y472l3d", templateParams)
+											.then(
+													() => {
+															document.getElementById("loading").classList.add("hidden"); // Sembunyikan loader
+															Swal.fire({
+																	icon: 'success',
+																	title: 'Berhasil!',
+																	text: 'Tugas berhasil dikirim!',
+																	confirmButtonColor: '#38a169',
+															});
+															resetForm(); // Reset form setelah pengiriman berhasil
+													},
+													(error) => {
+															document.getElementById("loading").classList.add("hidden"); // Sembunyikan loader
+															Swal.fire({
+																	icon: 'error',
+																	title: 'Gagal!',
+																	text: `Gagal mengirim tugas: ${error.text}`,
+																	confirmButtonColor: '#e53e3e',
+															});
+													}
+											);
+							})
+							.catch(error => {
+									document.getElementById("loading").classList.add("hidden");
+									Swal.fire({
+											icon: 'error',
+											title: 'Terjadi kesalahan!',
+											text: 'Terjadi kesalahan dalam membaca file.',
+											confirmButtonColor: '#e53e3e',
+									});
+							});
+			});
+
+			function resetForm() {
+					uploadedFiles = []; // Reset file yang diunggah
+					document.getElementById("fileList").innerHTML = ""; // Bersihkan daftar file
+					document.getElementById("dropzoneText").innerText = "Tarik dan letakkan file Anda di sini atau klik untuk mengunggah"; // Reset pesan
+					document.getElementById("submissionForm").reset(); // Reset form
+			}
+	</script>
+
+
+
+<style>
+	/* Styling untuk daftar file yang diunggah */
+	.file-item {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 10px;
+			padding: 5px;
+			background-color: #f4f4f4;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+	}
+
+	/* Styling untuk tombol hapus */
+	.remove-file-btn {
+			background-color: #e53e3e;
+			color: white;
+			border: none;
+			padding: 5px 10px;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 12px;
+			margin-left: 10px; /* Menambahkan jarak antara tombol dan teks */
+	}
+
+	.remove-file-btn:hover {
+			background-color: #c53030; /* Warna tombol saat hover */
+	}
+
+
+
+	/* Styling untuk dropzone */
+	#dropzone {
+			width: 100%;
+			height: 150px;
+			border: 2px dashed #38a169;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			font-size: 18px;
+			color: #38a169;
+			border-radius: 10px;
+			transition: all 0.3s ease;
+	}
+
+	#dropzone.dragover {
+			border-color: #3182ce;
+			background-color: #f0f8ff;
+	}
+
+</style>
+
+
+	
+		<!-- Footer -->
+		<footer class="bg-green-900 py-8 text-center">
+				<p class="text-sm">
+						<i class="fa-solid fa-copyright"></i> 2024 Pembelajaran Kebudayaan Islam. Semua Hak Dilindungi.
+				</p>
+		</footer>
+	
+	<script>
+			document.querySelectorAll('.border').forEach(faq => {
+					faq.addEventListener('click', () => {
+							const answer = faq.querySelector('p');
+							const icon = faq.querySelector('.toggle-icon');
+
+							if (answer.classList.contains('hidden')) {
+									answer.classList.remove('hidden');
+									icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+							} else {
+									answer.classList.add('hidden');
+									icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+							}
+					});
+			});
+	</script>
+
+</body>
+</html>
